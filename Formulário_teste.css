@@ -1,0 +1,101 @@
+body{
+    width: 100%;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(3, 67, 116);
+}
+
+body p{
+    width: 100%;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset{
+    width: 80%;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: center;
+    border:1px solid rgb(0, 0, 0);
+}
+
+legend{
+    font-weight:bold;
+    font-family: "Segoe UI","Arial","Times New Roman";
+    color: rgb(252, 252, 252);
+    align-items: center;
+    justify-content: center;
+}
+
+.field label{
+    font-weight:bold;
+    font-family: "Segoe UI","Arial","Times New Roman";
+    padding-left: 10px;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.radiobox label{
+    width: auto;
+    display: inline-block;
+    content: "\2022";
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+input[type=radio]{
+    content: "\2022";
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(171, 255, 61);
+    background-color: rgb(255, 255, 255);
+    outline: none;
+}
+
+input[type=text]:checked{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(171, 255, 61);
+    background-color: rgb(1, 175, 255);
+    outline: none;
+}
+
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: rgb(171, 255, 61);
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}

@@ -1,0 +1,177 @@
+<script>
+
+    function exibir_copiar(){
+
+        var data = new Date();
+        var dataFormatada = data.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
+        /*var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();*/
+
+        if (document.getElementById("marcondes").checked) {
+            var input_equipe = document.getElementById("marcondes");
+            var txtequipe = "EDSON PEREIRA DAMASCENO - 180009\nFERNANDE ANDRADE DOS SANTOS PINTO - 180086\nIRLAN DOS SANTOS - 180095\nLEANDRO DOS SANTOS DORIA - 082656\nMARCONDES GOMES DA SILVA - 180020\nTHIAGO GEDEON MARQUES DE SOUZA - 180093";
+            var placa = "OAD 6690"
+            var name_equipe = "LM 01"
+        }
+        else if (document.getElementById("sa").checked) {
+            var input_equipe = document.getElementById("sa");
+            var txtequipe = "ADILTON DANTAS DOS SANTOS - 180019\nALLAN CLARCK DOS SANTOS - 180002\nCRISTIANO BARROSO DE SA - 180006\nFRANCISCO JACKSON DE LIMA DANT - 180012\nJOSE MATEUS OTAVIANO DOS SANTOS - 180116\nRUBENS BARRETO ROCHA - 180133";
+            var placa = "QSJ 7408"
+            var name_equipe = "LM 02"
+        }
+        else if (document.getElementById("leudson").checked) {
+            var input_equipe = document.getElementById("leudson");
+            var txtequipe = "ANDERSON ALVES SOUZA - 180084\nDECIO SILVEIRA SANTOS - 180007\nJOSE CARLOS DE JESUS - 180087\nLEUDSON SANTOS DE SOUZA - 180099\nMATIAS DE JESUS SANTOS - 180100";
+            var placa = "OAE 9660"
+            var name_equipe = "LM 03"
+        }
+        else if (document.getElementById("valteir").checked) {
+            var input_equipe = document.getElementById("valteir");
+            var txtequipe = "ADILSON LIMA - 180136\nARNALDO SANTOS JUNIOR - 180128\nCLAUDIO LOPES DOS SANTOS - 180114\nJOSE MARIO GOMES VARJAO - 180130\nJOSE VALTEIR LIMA DE ALMEIDA - 180106\nTIAGO TINTILIANO SANTOS AZEVEDO - 180141";
+            var placa = "QFN 2669"
+            var name_equipe = "LM 04"
+        }
+        else if (document.getElementById("edenilton").checked) {
+            var input_equipe = document.getElementById("edenilton");
+            var txtequipe = "EDENILTON DANTAS SANTOS - 180129\nLUCAS DOS SANTOS LIMA - 180131\nMARCIO CLEY DOS SANTOS - 180104\nMATHEUS SANTOS DE ARAGAO - 180118\nWANDERLEY SANTOS FERREIRA - 180120";
+            var placa = "OAF 0678"
+            var name_equipe = "LM 05"
+        }
+        else if (document.getElementById("francisco").checked) {
+            var input_equipe = document.getElementById("francisco");
+            var txtequipe = "ANDERSON FONSECA SANTOS - 180135\nCARLOS MARCONDES DE SOUZA NUNES - 180107\nFRANCISCO HILARIO VIEIRA SANTOS - 180108\nJOSE ADRIANO CORREIA SANTOS - 180115\nNATHANAEL RIBEIRO ROCHA - 180137\nTADEU DE PAULO BEZERRA LEITAO - 180138";
+            var placa = "QFN 2869"
+            var name_equipe = "LM 06"
+        }
+        else if (document.getElementById("batista").checked) {
+            var input_equipe = document.getElementById("batista");
+            var txtequipe = "CRISTIANO BATISTA DE ARAUJO - 180047\nJEFFERSON DACIO DE O LINS - 180049\nJOSE CARLOS DOS SANTOS FILHO - 180048\nREINALDO SANTOS ALMEIDA - 180046";
+            var placa = "QSL 9579"
+            var name_equipe = "LV 01"
+        }
+        else if (document.getElementById("lugrecio").checked) {
+            var input_equipe = document.getElementById("lugrecio");
+            var txtequipe = "BRUNO SOUZA SANTOS - 180005\nCHARLAN MESSIAS DOS SANTOS - 180113\nLUGRECIO LIMA DOS SANTOS - 180117\nROBSON FERREIRA DOS SANTOS - 180139";
+            var placa = "PHJ 7242"
+            var name_equipe = "LV 02"
+        }
+
+        var input_obra = document.getElementById("obra");
+        var txtobra = input_obra.value;
+
+        var input_local = document.getElementById("local");
+        var txtlocal = input_local.value;
+
+        var input_desc = document.getElementById("desc");
+        var txtdesc = input_desc.value;
+
+        var input_he = document.getElementById("he");
+        var txthe = input_he.value;
+        /*var dia = input_he.getDate();
+        var mes = input_he.getMonth() + 1;
+        var ano = input_he.getFullYear();*/
+
+        var saida = "SÉRGIO RODRIGO PRADO SANTOS - 180055\n(79) 999548330\n\n- Colaboradores que irão executar hora extra (NOME - MATRÍCULA):\n"+txtequipe+"\n\n\n- BASE:\nARACAJU (LESTE)\n\n\n- LOCAL DO SERVIÇO:\n"+txtlocal+"\n\n\n- EQUIPE:\n"+txtequipe+"\n\n\n- PLACA DO VEÍCULO:\n"+placa+"\n\n\n- Numero da OS:\n"+txtobra+"\n\n\n- MOTIVO DO CHAMADO:\nOBRA CONSTRUÇÃO"+"\n\n\n- DESCRIÇÃO DO SERVIÇO REALIZADO:\n"+txtdesc;
+        alert("SÉRGIO RODRIGO PRADO SANTOS - 180055\n(79) 999548330\n\n- Colaboradores que irão executar hora extra (NOME - MATRÍCULA):\n"+txtequipe+"\n\n\n- BASE:\nARACAJU (LESTE)\n\n\n- LOCAL DO SERVIÇO:\n"+txtlocal+"\n\n\n- EQUIPE:\n"+name_equipe+"\n\n\n- PLACA DO VEÍCULO:\n"+placa+"\n\n\n- Numero da OS:\n"+txtobra+"\n\n\n- MOTIVO DO CHAMADO:\nOBRA CONSTRUÇÃO"+"\n\n\n- DESCRIÇÃO DO SERVIÇO REALIZADO:\n"+txtdesc+"\n\n\n- DATA INICIAL DA HORA EXTRA:\n"+dataFormatada+"\n\n\n- HORA INICIAL DA HORA EXTRA:\n16:00\n\n\n- DATA FINAL DA HORA EXTRA:\n"+dataFormatada+"\n\n\n- HORA FINAL DA HORA EXTRA:\n"+txthe);
+
+        var textArea = document.createElement("textarea");
+
+        textArea.style.position = 'fixed';
+        textArea.style.top = 0;
+        textArea.style.left = 0;
+        textArea.style.width = 'none';
+        textArea.style.height = 'none';
+        textArea.style.padding = 0;
+        textArea.style.border = 'none';
+        textArea.style.outline = 'none';
+        textArea.style.boxShadow = 'none';
+        textArea.style.background = 'transparent';
+        textArea.style.maxlength = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+        textArea.value = "SÉRGIO RODRIGO PRADO SANTOS - 180055\n(79) 999548330\n\n- Colaboradores que irão executar hora extra (NOME - MATRÍCULA):\n"+txtequipe+"\n\n\n- BASE:\nARACAJU (LESTE)\n\n\n- LOCAL DO SERVIÇO:\n"+txtlocal+"\n\n\n- EQUIPE:\n"+name_equipe+"\n\n\n- PLACA DO VEÍCULO:\n"+placa+"\n\n\n- Numero da OS:\n"+txtobra+"\n\n\n- MOTIVO DO CHAMADO:\nOBRA CONSTRUÇÃO"+"\n\n\n- DESCRIÇÃO DO SERVIÇO REALIZADO:\n"+txtdesc+"\n\n\n- DATA INICIAL DA HORA EXTRA:\n"+dataFormatada+"\n\n\n- HORA INICIAL DA HORA EXTRA:\n16:00\n\n\n- DATA FINAL DA HORA EXTRA:\n"+dataFormatada+"\n\n\n- HORA FINAL DA HORA EXTRA:\n"+txthe;
+
+        document.body.appendChild(textArea);
+        textArea.select();
+
+        try {
+            var successful = document.execCommand('copy');
+            var msg = successful ? 'foi Executado!!!' : 'não obteve Sucesso!!! AVISE A GABRIEL!!!!!!!';
+            alert('O comando de copiar o texto ' + msg);
+        }
+        catch (err) {
+            alert('Oops, unable to copy');
+            Window.prompt("Copie para área de transferência: Ctrl+C e tecle Enter", saida);
+        }
+        document.body.removeChild(textArea);
+    }
+</script>
+
+<!DOCTYPE html>
+<html lang="pt_br">
+
+    <head>
+        <title>SOLICITAÇÃO DE HORA EXTRA</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href= "Formulário_teste.css">
+        <title>SOLICITAÇÃO HORA EXTRA</title>
+    </head>
+    
+    <body>
+
+        <form id="solicitação_HoraExtra">
+            <fieldset>
+                <legend>Qual a equipe?</legend>
+                <p>
+                <label for="equipe"><em class="required"></em></label>
+                <input type="radio" name="equipe" id = "marcondes" value = \n>1 - MARCONDES<br>
+                <input type="radio" name="equipe" id = "sa" value = "sa">2 - CRISTIANO SA<br>
+                <input type="radio" name="equipe" id = "leudson" value = "leudson">3 - LEUDSON<br>
+                <input type="radio" name="equipe" id = "valteir" value = "valteir">4 - VALTEIR<br>
+                <input type="radio" name="equipe" id = "edenilton" value = "edenilton">5 - EDENILTON<br>
+                <input type="radio" name="equipe" id = "francisco" value = "francisco">6 - FRANCISCO<br>
+                <input type="radio" name="equipe" id = "batista" value = "batista">7 - CRISTIANO BATISTA<br>
+                <input type="radio" name="equipe" id = "lugrecio" value = "lugrecio">8 - LUGRECIO<br>
+                </p> 
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual o número da Obra?:</legend>
+                <p>
+                <label for="obra"><em class="required"></em></label>
+                <input name="obra" id="obra" type="text" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual o local da obra?:</legend>
+                <p> 
+                <label for="local"><em class="required"></em></label>
+                <input name="local" id="local" type="text" style="text-transform: capitalize" />
+                </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Qual a descrição do serviço?:</legend>
+                <p>
+                <label for="desc"><em class="required"></em></label>
+                <input name="desc" id="desc" type="text" style="text-transform: capitalize" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Até que horas vai ser a hora extra?:</legend>
+                <p>
+                <label for="he"><em class="required"></em></label>
+                <input type="time" name="he" id= "he">
+                <!--<input name="he" id="he" type="text" />-->
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" name="enviar_e_copiar" value="Enviar" onclick = "exibir_copiar()">
+            </p>        
+
+        </form>
+    </body>
+
+</html>
