@@ -87,7 +87,7 @@
         textArea.style.outline = 'none';
         textArea.style.boxShadow = 'none';
         textArea.style.background = 'transparent';
-        textArea.style.maxlength = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+        textArea.style.maxlength = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
         textArea.value = "SÉRGIO RODRIGO PRADO SANTOS - 180055\n(79) 999548330\n\n- Colaboradores que irão executar hora extra (NOME - MATRÍCULA):\n"+txtequipe+"\n\n\n- BASE:\nARACAJU (LESTE)\n\n\n- LOCAL DO SERVIÇO:\n"+txtlocal+"\n\n\n- EQUIPE:\n"+name_equipe+"\n\n\n- PLACA DO VEÍCULO:\n"+placa+"\n\n\n- Numero da OS:\n"+txtobra+"\n\n\n- MOTIVO DO CHAMADO:\nOBRA CONSTRUÇÃO"+"\n\n\n- DESCRIÇÃO DO SERVIÇO REALIZADO:\n"+txtdesc+"\n\n\n- DATA INICIAL DA HORA EXTRA:\n"+dataFormatada+"\n\n\n- HORA INICIAL DA HORA EXTRA:\n16:00\n\n\n- DATA FINAL DA HORA EXTRA:\n"+dataFormatada+"\n\n\n- HORA FINAL DA HORA EXTRA:\n"+txthe;
 
         document.body.appendChild(textArea);
@@ -146,7 +146,7 @@
                 <legend>Qual o local da obra?:</legend>
                 <p> 
                 <label for="local"><em class="required"></em></label>
-                <input name="local" id="local" type="text" style="text-transform: capitalize" />
+                <input name="local" id="local" type="text" style="text-transform: uppercase" />
                 </p>
             </fieldset>
             
@@ -154,7 +154,7 @@
                 <legend>Qual a descrição do serviço?:</legend>
                 <p>
                 <label for="desc"><em class="required"></em></label>
-                <input name="desc" id="desc" type="text" style="text-transform: capitalize" />
+                <input name="desc" id="desc" type="text" style="text-transform: uppercase" />
                 </p>
             </fieldset>
 
